@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3CAC80108CDB4A004CAF7B /* SMTPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CAC7E108CDB4A004CAF7B /* SMTPController.m */; };
+		6C3CAC9A108D0EE6004CAF7B /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CAC96108D0EE6004CAF7B /* AsyncSocket.m */; };
+		6C3CACDF108D30AE004CAF7B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		6C3CACE3108D30F0004CAF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CACC4108D2F99004CAF7B /* main.m */; };
+		6C8D60BB1091BD34005E315A /* SMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D60BA1091BD34005E315A /* SMTPMessage.m */; };
+		6CE09BC2110433E5000862A3 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE09BC0110433E5000862A3 /* NSDataAdditions.h */; };
+		6CE09BC3110433E5000862A3 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE09BC1110433E5000862A3 /* NSDataAdditions.m */; };
+		891E244E10AF5D6B000336C9 /* SMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D60BA1091BD34005E315A /* SMTPMessage.m */; };
+		891E256510AF65E8000336C9 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 891E256210AF65E8000336C9 /* AsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		891E256610AF65E8000336C9 /* SMTPController.h in Headers */ = {isa = PBXBuildFile; fileRef = 891E256310AF65E8000336C9 /* SMTPController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		891E256710AF65E8000336C9 /* SMTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 891E256410AF65E8000336C9 /* SMTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		897D5FF210B1C50D008DE166 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897D5FF110B1C50D008DE166 /* SystemConfiguration.framework */; };
+		897D609410B1EB21008DE166 /* SMTPChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = 897D609310B1EB21008DE166 /* SMTPChecks.m */; };
+		897D60A310B1EB64008DE166 /* SMTPChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = 897D609310B1EB21008DE166 /* SMTPChecks.m */; };
+		897D60A610B1EB6C008DE166 /* SMTPChecks.h in Headers */ = {isa = PBXBuildFile; fileRef = 897D609210B1EB21008DE166 /* SMTPChecks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		897D60F010B1EE58008DE166 /* SMTPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CAC7E108CDB4A004CAF7B /* SMTPController.m */; };
+		897D60F310B1EE6F008DE166 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897D5FF110B1C50D008DE166 /* SystemConfiguration.framework */; };
+		897D60F610B1EE8A008DE166 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CAC96108D0EE6004CAF7B /* AsyncSocket.m */; };
+		89B4037210AF68BF0075DF90 /* SMTPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B4037110AF68BF0075DF90 /* SMTPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C3CACF3108D32CB004CAF7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = SMTPKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C3CACFE108D32E6004CAF7B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* SMTPKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPKit_Prefix.pch; sourceTree = "<group>"; };
+		6C3CAC77108CDB16004CAF7B /* SMTPTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMTPTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3CAC7E108CDB4A004CAF7B /* SMTPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPController.m; sourceTree = "<group>"; };
+		6C3CAC96108D0EE6004CAF7B /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		6C3CACC4108D2F99004CAF7B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C3CACD2108D2FCF004CAF7B /* SMTPTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPTest_Prefix.pch; sourceTree = "<group>"; };
+		6C8D60BA1091BD34005E315A /* SMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPMessage.m; sourceTree = "<group>"; };
+		6CE09BC0110433E5000862A3 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		6CE09BC1110433E5000862A3 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		891E256210AF65E8000336C9 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		891E256310AF65E8000336C9 /* SMTPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPController.h; sourceTree = "<group>"; };
+		891E256410AF65E8000336C9 /* SMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPMessage.h; sourceTree = "<group>"; };
+		897D5FF110B1C50D008DE166 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		897D609210B1EB21008DE166 /* SMTPChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPChecks.h; sourceTree = "<group>"; };
+		897D609310B1EB21008DE166 /* SMTPChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPChecks.m; sourceTree = "<group>"; };
+		897D613110B23570008DE166 /* SMTPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMTPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B4037110AF68BF0075DF90 /* SMTPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPKit.h; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C3CAC75108CDB16004CAF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3CACDF108D30AE004CAF7B /* Cocoa.framework in Frameworks */,
+				897D60F310B1EE6F008DE166 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				897D5FF210B1C50D008DE166 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				897D613110B23570008DE166 /* SMTPKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SMTPKit */ = {
+			isa = PBXGroup;
+			children = (
+				6C3CACD6108D3008004CAF7B /* SMTPKit */,
+				6C3CACD9108D302F004CAF7B /* SMTPTest */,
+			);
+			name = SMTPKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6CE09BC0110433E5000862A3 /* NSDataAdditions.h */,
+				6CE09BC1110433E5000862A3 /* NSDataAdditions.m */,
+				6C3CAC92108D0EDC004CAF7B /* AsyncSocket */,
+				897D609210B1EB21008DE166 /* SMTPChecks.h */,
+				897D609310B1EB21008DE166 /* SMTPChecks.m */,
+				891E256310AF65E8000336C9 /* SMTPController.h */,
+				6C3CAC7E108CDB4A004CAF7B /* SMTPController.m */,
+				891E256410AF65E8000336C9 /* SMTPMessage.h */,
+				6C8D60BA1091BD34005E315A /* SMTPMessage.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+				897D5FF110B1C50D008DE166 /* SystemConfiguration.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				89B4037110AF68BF0075DF90 /* SMTPKit.h */,
+				32DBCF5E0370ADEE00C91783 /* SMTPKit_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		6C3CAC92108D0EDC004CAF7B /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				891E256210AF65E8000336C9 /* AsyncSocket.h */,
+				6C3CAC96108D0EE6004CAF7B /* AsyncSocket.m */,
+			);
+			name = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		6C3CACD6108D3008004CAF7B /* SMTPKit */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = SMTPKit;
+			sourceTree = "<group>";
+		};
+		6C3CACD9108D302F004CAF7B /* SMTPTest */ = {
+			isa = PBXGroup;
+			children = (
+				6C3CACDC108D3063004CAF7B /* Other Sources */,
+				6C3CACE2108D30BA004CAF7B /* Products */,
+			);
+			name = SMTPTest;
+			sourceTree = "<group>";
+		};
+		6C3CACDC108D3063004CAF7B /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6C3CACD2108D2FCF004CAF7B /* SMTPTest_Prefix.pch */,
+				6C3CACC4108D2F99004CAF7B /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		6C3CACE2108D30BA004CAF7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C3CAC77108CDB16004CAF7B /* SMTPTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891E256510AF65E8000336C9 /* AsyncSocket.h in Headers */,
+				897D60A610B1EB6C008DE166 /* SMTPChecks.h in Headers */,
+				891E256610AF65E8000336C9 /* SMTPController.h in Headers */,
+				891E256710AF65E8000336C9 /* SMTPMessage.h in Headers */,
+				89B4037210AF68BF0075DF90 /* SMTPKit.h in Headers */,
+				6CE09BC2110433E5000862A3 /* NSDataAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C3CAC76108CDB16004CAF7B /* SMTPTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3CAC7C108CDB17004CAF7B /* Build configuration list for PBXNativeTarget "SMTPTest" */;
+			buildPhases = (
+				6C3CAC74108CDB16004CAF7B /* Sources */,
+				6C3CAC75108CDB16004CAF7B /* Frameworks */,
+				6C3CACFE108D32E6004CAF7B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C3CACF4108D32CB004CAF7B /* PBXTargetDependency */,
+			);
+			name = SMTPTest;
+			productName = SMTPTest;
+			productReference = 6C3CAC77108CDB16004CAF7B /* SMTPTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DC2EF4F0486A6940098B216 /* SMTPKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SMTPKit" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMTPKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = SMTPKit;
+			productReference = 897D613110B23570008DE166 /* SMTPKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SMTPKit" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* SMTPKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* SMTPKit */,
+				6C3CAC76108CDB16004CAF7B /* SMTPTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C3CAC74108CDB16004CAF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3CACE3108D30F0004CAF7B /* main.m in Sources */,
+				897D60F610B1EE8A008DE166 /* AsyncSocket.m in Sources */,
+				6C8D60BB1091BD34005E315A /* SMTPMessage.m in Sources */,
+				897D60F010B1EE58008DE166 /* SMTPController.m in Sources */,
+				897D609410B1EB21008DE166 /* SMTPChecks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3CAC9A108D0EE6004CAF7B /* AsyncSocket.m in Sources */,
+				897D60A310B1EB64008DE166 /* SMTPChecks.m in Sources */,
+				891E244E10AF5D6B000336C9 /* SMTPMessage.m in Sources */,
+				6C3CAC80108CDB4A004CAF7B /* SMTPController.m in Sources */,
+				6CE09BC3110433E5000862A3 /* NSDataAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C3CACF4108D32CB004CAF7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* SMTPKit */;
+			targetProxy = 6C3CACF3108D32CB004CAF7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMTPKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = SMTPKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMTPKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = SMTPKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_LTO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../../build;
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_LTO = NO;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../../build;
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		6C3CAC7A108CDB16004CAF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMTPTest_Prefix.pch;
+				INFOPLIST_FILE = "SMTPTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SMTPTest;
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		6C3CAC7B108CDB16004CAF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SMTPTest-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SMTPTest;
+				SYMROOT = build;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SMTPKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SMTPKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C3CAC7C108CDB17004CAF7B /* Build configuration list for PBXNativeTarget "SMTPTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C3CAC7A108CDB16004CAF7B /* Debug */,
+				6C3CAC7B108CDB16004CAF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
