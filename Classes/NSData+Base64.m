@@ -14,7 +14,7 @@
 //  Renamed to NSDataAdditions on 2009/01/16 by Zach Drayer
 //
 
-#import "NSDataAdditions.h"
+#import "NSData+Base64.h"
 
 //
 // Mapping from 6 bit pattern to ASCII character.

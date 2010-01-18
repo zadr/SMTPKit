@@ -10,7 +10,7 @@
 
 #import "SMTPController.h"
 #import "SMTPChecks.h"
-#import "NSDataAdditions.h"
+#import "NSData+Base64.h"
 
 #define NUL 0
 
