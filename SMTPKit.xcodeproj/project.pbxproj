@@ -12,8 +12,9 @@
 		6C3CACDF108D30AE004CAF7B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		6C3CACE3108D30F0004CAF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CACC4108D2F99004CAF7B /* main.m */; };
 		6C8D60BB1091BD34005E315A /* SMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D60BA1091BD34005E315A /* SMTPMessage.m */; };
-		6CE09BC2110433E5000862A3 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE09BC0110433E5000862A3 /* NSDataAdditions.h */; };
-		6CE09BC3110433E5000862A3 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE09BC1110433E5000862A3 /* NSDataAdditions.m */; };
+		6CE09C0B11043DBC000862A3 /* SMTPTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CE09C0A11043DBC000862A3 /* SMTPTest-Info.plist */; };
+		6CE09C1A11043E7C000862A3 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE09C1811043E7C000862A3 /* NSDataAdditions.h */; };
+		6CE09C1B11043E7C000862A3 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE09C1911043E7C000862A3 /* NSDataAdditions.m */; };
 		891E244E10AF5D6B000336C9 /* SMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D60BA1091BD34005E315A /* SMTPMessage.m */; };
 		891E256510AF65E8000336C9 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 891E256210AF65E8000336C9 /* AsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891E256610AF65E8000336C9 /* SMTPController.h in Headers */ = {isa = PBXBuildFile; fileRef = 891E256310AF65E8000336C9 /* SMTPController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,8 +63,9 @@
 		6C3CACC4108D2F99004CAF7B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C3CACD2108D2FCF004CAF7B /* SMTPTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPTest_Prefix.pch; sourceTree = "<group>"; };
 		6C8D60BA1091BD34005E315A /* SMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTPMessage.m; sourceTree = "<group>"; };
-		6CE09BC0110433E5000862A3 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
-		6CE09BC1110433E5000862A3 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		6CE09C0A11043DBC000862A3 /* SMTPTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SMTPTest-Info.plist"; sourceTree = "<group>"; };
+		6CE09C1811043E7C000862A3 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		6CE09C1911043E7C000862A3 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		891E256210AF65E8000336C9 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		891E256310AF65E8000336C9 /* SMTPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPController.h; sourceTree = "<group>"; };
 		891E256410AF65E8000336C9 /* SMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPMessage.h; sourceTree = "<group>"; };
@@ -135,8 +137,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6CE09BC0110433E5000862A3 /* NSDataAdditions.h */,
-				6CE09BC1110433E5000862A3 /* NSDataAdditions.m */,
+				6CE09C1811043E7C000862A3 /* NSDataAdditions.h */,
+				6CE09C1911043E7C000862A3 /* NSDataAdditions.m */,
 				6C3CAC92108D0EDC004CAF7B /* AsyncSocket */,
 				897D609210B1EB21008DE166 /* SMTPChecks.h */,
 				897D609310B1EB21008DE166 /* SMTPChecks.m */,
@@ -145,7 +147,7 @@
 				891E256410AF65E8000336C9 /* SMTPMessage.h */,
 				6C8D60BA1091BD34005E315A /* SMTPMessage.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
@@ -200,19 +202,20 @@
 		6C3CACD9108D302F004CAF7B /* SMTPTest */ = {
 			isa = PBXGroup;
 			children = (
-				6C3CACDC108D3063004CAF7B /* Other Sources */,
+				6C3CACDC108D3063004CAF7B /* SMTPTestApp */,
 				6C3CACE2108D30BA004CAF7B /* Products */,
 			);
 			name = SMTPTest;
 			sourceTree = "<group>";
 		};
-		6C3CACDC108D3063004CAF7B /* Other Sources */ = {
+		6C3CACDC108D3063004CAF7B /* SMTPTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				6CE09C0A11043DBC000862A3 /* SMTPTest-Info.plist */,
 				6C3CACD2108D2FCF004CAF7B /* SMTPTest_Prefix.pch */,
 				6C3CACC4108D2F99004CAF7B /* main.m */,
 			);
-			name = "Other Sources";
+			path = SMTPTestApp;
 			sourceTree = "<group>";
 		};
 		6C3CACE2108D30BA004CAF7B /* Products */ = {
@@ -235,7 +238,7 @@
 				891E256610AF65E8000336C9 /* SMTPController.h in Headers */,
 				891E256710AF65E8000336C9 /* SMTPMessage.h in Headers */,
 				89B4037210AF68BF0075DF90 /* SMTPKit.h in Headers */,
-				6CE09BC2110433E5000862A3 /* NSDataAdditions.h in Headers */,
+				6CE09C1A11043E7C000862A3 /* NSDataAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE09C0B11043DBC000862A3 /* SMTPTest-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +333,7 @@
 				897D60A310B1EB64008DE166 /* SMTPChecks.m in Sources */,
 				891E244E10AF5D6B000336C9 /* SMTPMessage.m in Sources */,
 				6C3CAC80108CDB4A004CAF7B /* SMTPController.m in Sources */,
-				6CE09BC3110433E5000862A3 /* NSDataAdditions.m in Sources */,
+				6CE09C1B11043E7C000862A3 /* NSDataAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +408,6 @@
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.6;
-				SYMROOT = ../../build;
 				WARNING_CFLAGS = "";
 			};
 			name = Debug;
@@ -428,7 +431,6 @@
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.6;
-				SYMROOT = ../../build;
 				WARNING_CFLAGS = "";
 			};
 			name = Release;
@@ -443,8 +445,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = SMTPTest_Prefix.pch;
-				INFOPLIST_FILE = "SMTPTest-Info.plist";
+				GCC_PREFIX_HEADER = SMTPTestApp/SMTPTest_Prefix.pch;
+				INFOPLIST_FILE = "SMTPTestApp/SMTPTest-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -467,8 +469,8 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "SMTPTest-Info.plist";
+				GCC_PREFIX_HEADER = SMTPTestApp/SMTPTest_Prefix.pch;
+				INFOPLIST_FILE = "SMTPTestApp/SMTPTest-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
