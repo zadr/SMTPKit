@@ -97,7 +97,7 @@ static NSString *lineEnd = @"\r\n";
 
 - (BOOL)openSMTPConnectionToHost:(NSString *)host error:(NSError **)error
 {
-	return [self openSMTPConnectionToHost:host port:25 error:&error];
+	return [self openSMTPConnectionToHost:host port:25 error:error];
 }
 
 - (void)introduce
