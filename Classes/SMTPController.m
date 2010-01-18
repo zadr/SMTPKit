@@ -80,19 +80,24 @@ static NSString *lineEnd = @"\r\n";
 
 #pragma mark Connection Control
 
-- (BOOL)openSMTPConnectionToHost:(NSString *)host error:(NSError **)error
-{
-	if (![SMTPChecks canReachHost:host port:25]) {
+- (BOOL)openSMTPConnectionToHost:(NSString *)host port:(UInt16) port error:(NSError **)error {
+	if (![SMTPChecks canReachHost:host port:port]) {
 		if (error != NULL) {
 			*error = [NSError errorWithDomain:SMTPControllerErrorCantConnect code:107 userInfo:nil];
 		}
 		return NO;
 	}
 	
-	[connectSocket connectToHost:host onPort:25 error:nil];
+	[connectSocket connectToHost:host onPort:port error:nil];
 	queueBlocking = YES;
-
+	
 	return YES;
+	
+}
+
+- (BOOL)openSMTPConnectionToHost:(NSString *)host error:(NSError **)error
+{
+	return [self openSMTPConnectionToHost:host port:25 error:&error];
 }
 
 - (void)introduce

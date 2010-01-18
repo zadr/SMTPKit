@@ -29,7 +29,8 @@ static NSString *const SMTPControllerErrorCantConnect = @"SMTPControllerErrorCan
 
 + (SMTPController *)controllerWithUsername:(NSString *)username password:(NSString *)password; // Convenience method to initialize a controller
 
-- (BOOL)openSMTPConnectionToHost:(NSString *)host error:(NSError **)error; // Opens up an SMTP Connection to the host
+- (BOOL)openSMTPConnectionToHost:(NSString *)host error:(NSError **)error; // Opens up an SMTP Connection to the host, on port 25
+- (BOOL)openSMTPConnectionToHost:(NSString *)host port:(UInt16) port error:(NSError **)error; // Same as above, only with a specific port
 
 //common methods
 - (BOOL)authenticateWithError:(NSError **) error; // Authenticates with the SMTP server. Doesn't check responses for errors yet.
