@@ -3,7 +3,7 @@ SMTPKit
 
 Why?
 ----
-Because I started working on this before realizing that there were other frameworks to do this already. But, @zadr says mine is easier. So, there's that.
+Because I started working on this before realizing that there were other frameworks to do this already. But, MailCore apparently doesn't build, and others are under more restrictive licenses (such as the GPL). Also, I just wanted something to do.
 
 How far along is it?
 --------------------
