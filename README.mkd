@@ -1,0 +1,11 @@
+SMTPKit
+=======
+
+Why?
+----
+Because I started working on this before realizing that there were other frameworks to do this already. But, MailCore apparently doesn't build, and others are under more restrictive licenses (such as the GPL). Also, I just wanted something to do.
+
+How far along is it?
+--------------------
+
+Not very. We've got some initial calls made, but there's not really any error handling, and it's not very extensive. There's also no HTML or attachment support. It also doesn't work with SSL mail servers. But it sends text mail to unencrypted servers **really well**. :P
