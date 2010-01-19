@@ -8,7 +8,7 @@
 
 #import "AsyncSocket.h"
 
-@class SMTPMessage
+@class SMTPMessage;
 
 static NSString *const SMTPControllerErrorNoUsername = @"SMTPControllerErrorNoUsername"; // 104
 static NSString *const SMTPControllerErrorNoPassword = @"SMTPControllerErrorNoPassword"; // 105

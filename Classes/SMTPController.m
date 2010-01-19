@@ -39,7 +39,7 @@ static NSString *lineEnd = @"\r\n";
 
 + (SMTPController *)controllerWithUsername:(NSString *)username password:(NSString *)password
 {
-	SMTPController *controller = [self init];
+	SMTPController *controller = [[self alloc] init];
 
 	if (controller) {
 		controller.username = username;
