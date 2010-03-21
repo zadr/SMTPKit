@@ -11,8 +11,6 @@
 //  this copyright and permission notice. Attribution in compiled projects is
 //  appreciated but not required.
 //
-//  Renamed to NSDataAdditions on 2009/01/16 by Zach Drayer
-//
 
 #import "NSData+Base64.h"
 
