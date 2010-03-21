@@ -381,7 +381,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SMTPKit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				PRODUCT_NAME = SMTPKit;
 				WRAPPER_EXTENSION = framework;
 			};
